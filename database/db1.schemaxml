@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">dbdata</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="karyawan" view="colnames">
+<left>0</left>
+<top>0</top>
+<width>119</width>
+<height>158</height>
+<sql_create_table>CREATE TABLE `karyawan` (
+  `id_karyawan` int(225) NOT NULL,
+  `nama` varchar(225) NOT NULL,
+  `username` varchar(225) NOT NULL,
+  `password` varchar(225) NOT NULL,
+  `alamat` varchar(225) NOT NULL,
+  PRIMARY KEY (`id_karyawan`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="user" view="colnames">
+<left>124</left>
+<top>0</top>
+<width>103</width>
+<height>141</height>
+<sql_create_table>CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
